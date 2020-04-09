@@ -8,7 +8,7 @@ const htmlPort = process.env.PORT || 4000;
 app.listen(htmlPort,()=>{
 console. log(`App running on ${htmlPort}`);
 })
-/*
+
 const SocketServer = require('ws').Server;
 //const express = require('express');
 
@@ -34,4 +34,3 @@ wss.on('connection', ws => {
         console.log(messageStr);
     })
 });
-*/
