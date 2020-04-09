@@ -4,7 +4,7 @@ const app=express();
 app.get('/*', (req, res) => {
 res.sendFile(path.join(__dirname, './index.html'));
 })
-const htmlPort = process.env.PORT || 8081;
+const htmlPort = 8081;
 app.listen(htmlPort,()=>{
 console. log(`App running on ${htmlPort}`);
 })
@@ -12,7 +12,7 @@ console. log(`App running on ${htmlPort}`);
 const SocketServer = require('ws').Server;
 //const express = require('express');
 
-const port = 5000;
+const port = process.env.PORT || 5000;
 const server = express().listen(port, () => console.log(`Listening on ${port}`))
 
 const wss = new SocketServer({ server })
