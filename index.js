@@ -4,11 +4,11 @@ const app=express();
 app.get('/*', (req, res) => {
 res.sendFile(path.join(__dirname, './index.html'));
 })
-const htmlPort = 8081;
+const htmlPort = process.env.PORT || 4000;
 app.listen(htmlPort,()=>{
 console. log(`App running on ${htmlPort}`);
 })
-
+/*
 const SocketServer = require('ws').Server;
 //const express = require('express');
 
@@ -34,3 +34,4 @@ wss.on('connection', ws => {
         console.log(messageStr);
     })
 });
+*/
