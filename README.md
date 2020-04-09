@@ -1,2 +1,2 @@
 # NodeTest
-mode
+mode test
