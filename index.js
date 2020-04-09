@@ -12,7 +12,7 @@ console. log(`App running on ${htmlPort}`);
 const SocketServer = require('ws').Server;
 //const express = require('express');
 
-const port = process.env.PORT || 5000;
+const port = 5000;
 const server = express().listen(port, () => console.log(`Listening on ${port}`))
 
 const wss = new SocketServer({ server })
